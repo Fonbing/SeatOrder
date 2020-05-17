@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_seat_name"
+        android:layout_width="@dimen/desk_size"
+        android:layout_height="@dimen/desk_size"
+        android:background="@drawable/seat_img_selector"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+</LinearLayout>
+
+

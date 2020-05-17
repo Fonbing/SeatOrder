@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_bottom_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/alert_corners"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tv_alert_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="uuq不足到家啦就是的垃圾的垃圾多了撒娇的了解了房间都说了房间里房间里的时间分离圣诞节福利放假了圣诞节福利"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--android:left 是定义分隔线距离屏幕左边的距离-->
+    <item
+        android:left="10dp"
+        android:right="10dp">
+        <shape android:shape="rectangle">
+            <!--这里是定义分隔线的颜色-->
+            <solid android:color="@color/colorlines" />
+            <!--这里是定义分隔线的高度-->
+            <size android:height="1dp" />
+        </shape>
+    </item>
+</layer-list>

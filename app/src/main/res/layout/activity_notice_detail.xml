@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/immersion_bar" />
+
+    <include layout="@layout/layout_no_data" />
+
+    <TextView
+        android:id="@+id/tv_notice_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="5dp"
+        android:text="1.记得拉数据都拉进大萨达多来大大大发送到发多少家对了就爱看的骄傲了的交流多了都了解阿里大萨达所大佛挡杀佛所付多所付付付付范德萨发生地方放松放松放松方式方法付水电费的说法是否收费是否发送方式发顺丰多大多大大\n
+2.哟安好"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+</LinearLayout>

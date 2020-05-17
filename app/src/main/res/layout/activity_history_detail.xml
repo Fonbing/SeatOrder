@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:NodeProgressView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ui.activity.recorddetail.RecordDetailActivity">
+    <!--    标题：图书馆学术研究中心-->
+    <include layout="@layout/immersion_bar" />
+
+    <include layout="@layout/layout_record_detail_top" />
+
+    <include layout="@layout/layout_split_line" />
+
+    <com.lxt.seatorder.ui.widget.NodeProgressView
+        android:id="@+id/npv_record_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        NodeProgressView:nodeRadius="5dp"
+        NodeProgressView:width="2dp" />
+</LinearLayout>

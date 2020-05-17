@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.order.OrderInfoActivity">
+    <!--    标题：图书馆学术研究中心-->
+    <include layout="@layout/immersion_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="已认证信息（不可修改）"
+                android:textColor="@color/highlight"
+                android:textSize="13sp" />
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="学号："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="201810660101"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="姓名："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="张三"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp " />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="卡号："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="12:00"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp " />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:text="院系："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="信息工程学院"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp " />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="常规资料"
+                android:textColor="@color/highlight"
+                android:textSize="13sp" />
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:maxLength="20"
+                    android:selectAllOnFocus="false"
+                    android:text="生日："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="请选择"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp " />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:maxLength="20"
+                    android:selectAllOnFocus="false"
+                    android:text="性别："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="请选择"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp " />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:maxLength="20"
+                    android:selectAllOnFocus="false"
+                    android:text="邮箱："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="请填写"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp " />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手机号："
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_sel_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:drawableEnd="@drawable/ic_right_arrow"
+                    android:gravity="end"
+                    android:text="绑定"
+                    android:textColor="@color/tab_text_color_selector"
+                    android:textSize="16sp " />
+            </LinearLayout>
+
+            <include layout="@layout/layout_split_line" />
+
+       <!--     <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="安全性"
+                android:textColor="@color/highlight"
+                android:textSize="13sp" />
+
+            <include layout="@layout/layout_split_line" />
+
+            <TextView
+                android:id="@+id/tv_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:maxLength="20"
+                android:padding="15dp"
+                android:text="修改密码"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <include layout="@layout/layout_split_line" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6684FF</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#000000</color>
+    <color name="highlight">#FF8C00</color>
+    <color name="colorlines">#eceef0</color>
+    <color name="darkgray">#A9A9A9</color>
+    <color name="transparent">#00000000</color>
+    <color name="bottomtabsel">#6683ff</color>
+    <color name="bottomtabdef">#888a8f</color>
+    <color name="circleText">#adbbff</color>
+    <color name="colorTextContentSelect">#2f3138</color>
+    <color name="colorTextContentDefault">#888a8f</color>
+    <color name="colorTextTitle">#2f3138</color>
+    <color name="colorTextTitleSelect">#6683ff</color>
+    <color name="textInputLayout">#96ffffff</color>
+    <color name="nodeColor">#cccccc</color>
+    <color name="nodeTextColor">#00bcb4</color>
+</resources>
