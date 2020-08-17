@@ -117,7 +117,7 @@ public class BaseActivity extends AppCompatActivity implements BaseView {
 
     @Override
     public void showErr() {
-        showToast(getResources().getString(R.string.api_error_msg));
+        showToast(getString(R.string.api_error_msg));
     }
 
     @Override

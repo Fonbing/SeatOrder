@@ -19,7 +19,6 @@ import cn.bingoogolapple.baseadapter.BGAViewHolderHelper;
  */
 public class RvNoticeHistoryAdapter extends BGARecyclerViewAdapter<Notice> {
 
-
     private TextView mTvNoticeInfo;
     private TextView mTvNoticeTime;
     private TextView mTvNoticeLook;

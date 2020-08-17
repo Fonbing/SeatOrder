@@ -8,6 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.lxt.seatorder.MyApplication;
 import com.lxt.seatorder.R;
 import com.lxt.seatorder.bean.OrderUser;
 import com.lxt.seatorder.bean.UserToken;
@@ -15,6 +16,7 @@ import com.lxt.seatorder.mvp.MVPBaseActivity;
 import com.lxt.seatorder.ui.activity.MainActivity;
 import com.lxt.seatorder.utils.DateUtil;
 import com.lxt.seatorder.utils.SpUtils;
+import com.tencent.mm.opensdk.modelmsg.SendAuth;
 
 import java.util.Date;
 import java.util.HashMap;
@@ -31,6 +33,7 @@ public class LoginActivity extends MVPBaseActivity<LoginContract.View, LoginPres
     private EditText mEtUsername;
     private EditText mEtPassword;
     private Button mBtnLogin;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +64,6 @@ public class LoginActivity extends MVPBaseActivity<LoginContract.View, LoginPres
 
     @Override
     protected void initData() {
-
         String username = (String) SpUtils.get(mContext, "username", "");
         String pwd = (String) SpUtils.get(mContext, "pwd", "");
         mEtUsername.setText(username);
@@ -120,6 +122,10 @@ public class LoginActivity extends MVPBaseActivity<LoginContract.View, LoginPres
             case R.id.btn_login:
                 String username = mEtUsername.getText().toString().trim();
                 String password = mEtPassword.getText().toString().trim();
+                SendAuth.Req req = new SendAuth.Req();
+                req.scope = "snsapi_userinfo";
+                req.state = "STATE";
+                MyApplication.WXAPI.sendReq(req);
                 if (TextUtils.isEmpty(username))
                     showToast("用户名不可为空");
                 else if (TextUtils.isEmpty(password))
@@ -127,8 +133,9 @@ public class LoginActivity extends MVPBaseActivity<LoginContract.View, LoginPres
                 else if (!password.equals("123456"))
                     showToast("用户名或密码不正确");
                 else {
-                    showLoadingDialog();
+                 /*   showLoadingDialog();
 //                    mPresenter.login(username, password);
+                    loginTest();*/
                     loginTest();
                 }
                 break;
@@ -147,4 +154,6 @@ public class LoginActivity extends MVPBaseActivity<LoginContract.View, LoginPres
         userToken.setAppSecret(appS);
         loginSuccess(userToken);
     }
+
+
 }

@@ -492,7 +492,7 @@ public class ExtendActivity extends MVPBaseActivity<ExtendContract.View, ExtendP
         showToast(msg);
         dismissLoadingDialog();
         switch (type) {
-            case 11:
+            case 11 :
                 mSwtOrderStatus.setChecked(mSwtOrderStatus.isChecked());
                 break;
             case 21:

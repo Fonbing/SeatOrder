@@ -7,7 +7,6 @@ import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.lxt.seatorder.MyApplication;
-import com.lxt.seatorder.utils.StatusBarUtil;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
